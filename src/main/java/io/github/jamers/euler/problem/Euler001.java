@@ -14,4 +14,8 @@ public class Euler001 implements EulerProblem {
         int multiple2 = 5;
         return MathUtil.calculateSumOfMultiples(limit, multiple1, multiple2);
     }
+
+    public static void main(String[] args) {
+        System.out.println(new Euler001().solve());
+    }
 }
