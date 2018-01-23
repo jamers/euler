@@ -1,4 +1,10 @@
 # euler
-Project Euler solutions written in Java
 
-:white_check_mark:
+Project Euler solutions
+
+
+
+
+| ID | Java |
+|---|---|
+| 01 | :white_check_mark: |
