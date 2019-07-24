@@ -5,13 +5,13 @@ Project Euler solutions
 
 
 
-| ID | [Site](https://projecteuler.net "Probelm has been completed on the Project Euler website") | Java |
+| ID | [Site](https://projecteuler.net "Problem has been completed on the Project Euler website") | Java |
 |---|---|---|
 | 01 | :white_check_mark: | :white_check_mark: |
 | 02 | :white_check_mark: | :white_check_mark: |
 | 03 | :white_check_mark: |  |
 | 04 | :white_check_mark: |  |
-| 05 | :green_check_mark: |  |
+| 05 | :white_check_mark: |  |
 | 06 | :white_check_mark: |  |
 | 07 | :white_check_mark: |  |
 | 08 | :white_check_mark: |  |
