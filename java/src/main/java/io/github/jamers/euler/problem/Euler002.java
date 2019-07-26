@@ -1,23 +1,14 @@
 package io.github.jamers.euler.problem;
 
-import io.github.jamers.euler.EulerProblem;
 import io.github.jamers.math.FibonnacciSeriesIterator;
-import io.github.jamers.math.MathUtil;
 import io.github.jamers.math.NumberUtil;
 
 import java.math.BigInteger;
 
 /**
- * Created by jamers on 27/01/2016.
- * <p>
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
  */
-public class Euler002 implements EulerProblem {
-    @Override
-    public int solve() {
-        int limit = 4_000_000;
-        return addEvenValuedFibonnacciTerms(limit);
-    }
+public class Euler002 {
 
     public int addEvenValuedFibonnacciTerms(int limit) {
         int result = 0;
@@ -30,9 +21,5 @@ public class Euler002 implements EulerProblem {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Euler002().solve());
     }
 }

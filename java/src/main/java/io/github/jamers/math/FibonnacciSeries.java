@@ -1,5 +1,8 @@
 package io.github.jamers.math;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.math.BigInteger;
 import java.util.Arrays;
 
@@ -8,6 +11,7 @@ import java.util.Arrays;
  */
 public class FibonnacciSeries implements Series<BigInteger> {
 
+    private static final Logger logger = LoggerFactory.getLogger(FibonnacciSeries.class);
     private int current = -1;
     private BigInteger[] results;
 
@@ -39,6 +43,8 @@ public class FibonnacciSeries implements Series<BigInteger> {
         for(int i = previousMax; i < results.length; i++) {
             results[i] = calculate(i);
         }
+
+        logger.info("Extended series size from {} to {} to accommodate requested size {}.", previousMax, results.length, requested);
     }
 
     private BigInteger calculate(int i) {
