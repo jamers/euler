@@ -46,4 +46,9 @@ public class EulerTest
         assertEquals(BigInteger.valueOf(13), new PrimeSeries().getNth(6));
         assertEquals(BigInteger.valueOf(104743), new Euler007().solve());
     }
+
+    @Test
+    public void test009() {
+        assertEquals(31875000, new Euler009().solve());
+    }
 }
