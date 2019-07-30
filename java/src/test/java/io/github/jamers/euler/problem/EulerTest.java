@@ -27,4 +27,9 @@ public class EulerTest
     public void test004() {
         assertEquals(906609, new Euler004().solve());
     }
+
+    @Test
+    public void test005() {
+        assertEquals(232792560, new Euler005().solve());
+    }
 }
