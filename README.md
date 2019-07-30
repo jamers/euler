@@ -10,7 +10,7 @@ Project Euler solutions
 | 01 | [Multiples of 3 and 5](https://projecteuler.net/problem=1) | :white_check_mark: | :white_check_mark: |
 | 02 | [Even Fibonacci numbers](https://projecteuler.net/problem=2) | :white_check_mark: | :white_check_mark: |
 | 03 | [Largest prime factor](https://projecteuler.net/problem=3) | :white_check_mark: | :white_check_mark: |
-| 04 |  | :white_check_mark: |  |
+| 04 | [Largest palindrome product](https://projecteuler.net/problem=4) | :white_check_mark: |  |
 | 05 |  | :white_check_mark: |  |
 | 06 |  | :white_check_mark: |  |
 | 07 |  | :white_check_mark: |  |
