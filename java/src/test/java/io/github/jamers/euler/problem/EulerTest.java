@@ -51,4 +51,9 @@ public class EulerTest
     public void test009() {
         assertEquals(31875000, new Euler009().solve());
     }
+
+    @Test
+    public void test010() {
+        assertEquals(BigInteger.valueOf(142913828922L), new Euler010().solve());
+    }
 }
