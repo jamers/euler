@@ -69,7 +69,7 @@ public class PrimeSeries implements Series<BigInteger> {
     @Override public BigInteger next()
     {
         current += 1;
-        if (current >= results.size()) {
+        while(current >= results.size()) {
             populateNextPrimes();
         }
         return results.get(current);
@@ -77,9 +77,9 @@ public class PrimeSeries implements Series<BigInteger> {
 
     @Override public BigInteger getNth(int n)
     {
-        if(n >= results.size()) {
+        while(n >= results.size()) {
             populateNextPrimes();
         }
-        return results.get(n);
+        return results.get(n - 1);
     }
 }

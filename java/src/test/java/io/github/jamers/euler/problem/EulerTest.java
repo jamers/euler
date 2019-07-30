@@ -1,5 +1,6 @@
 package io.github.jamers.euler.problem;
 
+import io.github.jamers.math.PrimeSeries;
 import org.junit.Test;
 
 import java.math.BigInteger;
@@ -37,5 +38,12 @@ public class EulerTest
     public void test006() {
         assertEquals(2640, new Euler006().sumSquareDifference(10));
         assertEquals(25164150, new Euler006().sumSquareDifference(100));
+    }
+
+    @Test
+    public void test007() {
+        assertEquals(BigInteger.valueOf(2), new PrimeSeries().getNth(1));
+        assertEquals(BigInteger.valueOf(13), new PrimeSeries().getNth(6));
+        assertEquals(BigInteger.valueOf(104743), new Euler007().solve());
     }
 }
