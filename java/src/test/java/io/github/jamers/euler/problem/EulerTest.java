@@ -32,4 +32,10 @@ public class EulerTest
     public void test005() {
         assertEquals(232792560, new Euler005().solve());
     }
+
+    @Test
+    public void test006() {
+        assertEquals(2640, new Euler006().sumSquareDifference(10));
+        assertEquals(25164150, new Euler006().sumSquareDifference(100));
+    }
 }
