@@ -1,6 +1,6 @@
 package io.github.jamers.euler.problem;
 
-import io.github.jamers.math.PrimeSeries;
+import io.github.jamers.math.series.PrimeSeries;
 import org.junit.Test;
 
 import java.math.BigInteger;
@@ -59,6 +59,6 @@ public class EulerTest
 
     @Test
     public void test012() {
-        assertEquals(BigInteger.valueOf(3), new Euler012().solve());
+        assertEquals(76576500, new Euler012().solve());
     }
 }

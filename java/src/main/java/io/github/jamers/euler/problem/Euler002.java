@@ -1,6 +1,6 @@
 package io.github.jamers.euler.problem;
 
-import io.github.jamers.math.FibonnacciSeriesIterator;
+import io.github.jamers.math.series.iterator.FibonnacciSeriesIterator;
 import io.github.jamers.math.NumberUtil;
 
 import java.math.BigInteger;

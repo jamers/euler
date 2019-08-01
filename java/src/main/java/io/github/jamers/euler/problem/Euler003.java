@@ -1,10 +1,8 @@
 package io.github.jamers.euler.problem;
 
-import io.github.jamers.math.PrimeSeries;
+import io.github.jamers.math.series.PrimeSeries;
 
 import java.math.BigInteger;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.TreeSet;
 
 /**
@@ -18,14 +16,15 @@ public class Euler003 {
         double sqrt = Math.sqrt(limit.longValue());
         BigInteger nextPrime = BigInteger.ZERO;
         TreeSet<BigInteger> factors = new TreeSet<>();
-
+        int counter = 1;
         while (nextPrime.longValue() < sqrt)
         {
-            nextPrime = primeSeries.next();
+            nextPrime = primeSeries.getNth(counter);
             BigInteger[] bigIntegers = limit.divideAndRemainder(nextPrime);
             if(BigInteger.ZERO.equals(bigIntegers[1])) { // no remainder, so it is a factor
                 factors.add(nextPrime);
             }
+            counter += 1;
         }
 
         return factors.last();

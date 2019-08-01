@@ -1,5 +1,6 @@
-package io.github.jamers.math;
+package io.github.jamers.math.series;
 
+import io.github.jamers.math.series.exception.InvalidSeriesIndexException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,13 +15,12 @@ public class PrimeSeries implements Series<BigInteger> {
 
     private boolean[] sieve; // sieve of Erastothenes
     private List<BigInteger> results = new ArrayList<>(); // List of prime numbers we have worked out so far
-    private int current = -1;
 
     public PrimeSeries() {
-        populateNextPrimes();
+        doubleCalculatedAmount();
     }
 
-    private void populateNextPrimes() {
+    private void doubleCalculatedAmount() {
         int originalSieveLength;
         if(sieve == null)
         {
@@ -66,19 +66,13 @@ public class PrimeSeries implements Series<BigInteger> {
         }
     }
 
-    @Override public BigInteger next()
-    {
-        current += 1;
-        while(current >= results.size()) {
-            populateNextPrimes();
-        }
-        return results.get(current);
-    }
-
     @Override public BigInteger getNth(int n)
     {
+        if(n < 1) {
+            throw new InvalidSeriesIndexException(this.getClass(), n);
+        }
         while(n >= results.size()) {
-            populateNextPrimes();
+            doubleCalculatedAmount();
         }
         return results.get(n - 1);
     }

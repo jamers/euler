@@ -1,20 +1,18 @@
-package io.github.jamers.math;
+package io.github.jamers.math.series.iterator;
 
+import io.github.jamers.math.series.iterator.FibonnacciSeriesIterator;
 import org.junit.Test;
 
 import java.math.BigInteger;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by jamers on 06/02/2016.
- */
-
-public class FibonnaciSeriesTest {
+public class FibonnaciSeriesIteratorTest
+{
 
     @Test
     public void testNext() {
-        FibonnacciSeries series = new FibonnacciSeries();
+        FibonnacciSeriesIterator series = new FibonnacciSeriesIterator();
         assertEquals(BigInteger.valueOf(0), series.next());
         assertEquals(BigInteger.valueOf(1), series.next());
         assertEquals(BigInteger.valueOf(1), series.next());
@@ -58,7 +56,7 @@ public class FibonnaciSeriesTest {
 
     @Test
     public void testNextWithNonDefaultStartValues() {
-        FibonnacciSeries series = new FibonnacciSeries(1, 2);
+        FibonnacciSeriesIterator series = new FibonnacciSeriesIterator(1, 2);
         assertEquals(BigInteger.valueOf(1), series.next());
         assertEquals(BigInteger.valueOf(2), series.next());
         assertEquals(BigInteger.valueOf(3), series.next());
@@ -96,12 +94,5 @@ public class FibonnaciSeriesTest {
         assertEquals(BigInteger.valueOf(14930352), series.next());
         assertEquals(BigInteger.valueOf(24157817), series.next());
         assertEquals(BigInteger.valueOf(39088169), series.next());
-    }
-
-    @Test
-    public void testGetNth() {
-        FibonnacciSeries series = new FibonnacciSeries();
-        series.getNth(46);
-        series.getNth(47);
     }
 }

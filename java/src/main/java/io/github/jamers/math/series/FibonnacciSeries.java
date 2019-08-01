@@ -1,24 +1,23 @@
-package io.github.jamers.math;
+package io.github.jamers.math.series;
 
+import io.github.jamers.math.series.exception.InvalidSeriesIndexException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.math.BigInteger;
 import java.util.Arrays;
 
-/**
- * Created by jamers on 06/02/2016.
- */
 public class FibonnacciSeries implements Series<BigInteger> {
 
     private static final Logger logger = LoggerFactory.getLogger(FibonnacciSeries.class);
-    private int current = -1;
     private BigInteger[] results;
 
     public FibonnacciSeries() {
-        results = new BigInteger[2];
-        results[0] = BigInteger.ZERO;
-        results[1] = BigInteger.ONE;
+        this(0, 1);
+    }
+
+    public FibonnacciSeries(Integer first, Integer second) {
+        this(BigInteger.valueOf(first), BigInteger.valueOf(second));
     }
 
     public FibonnacciSeries(BigInteger one, BigInteger two) {
@@ -27,12 +26,7 @@ public class FibonnacciSeries implements Series<BigInteger> {
         results[1] = two;
     }
 
-    public FibonnacciSeries(Integer one, Integer two) {
-        results = new BigInteger[2];
-        results[0] = BigInteger.valueOf(one);
-        results[1] = BigInteger.valueOf(two);
-    }
-
+    // TODO doubleCalculatedAmount
     private void populate(int requested) {
         int previousMax = results.length;
 
@@ -61,19 +55,13 @@ public class FibonnacciSeries implements Series<BigInteger> {
     }
 
     @Override
-    public BigInteger next() {
-        current += 1;
-        if (current >= results.length) {
-            populate(results.length);
-        }
-        return results[current];
-    }
-
-    @Override
     public BigInteger getNth(int n) {
+        if(n < 1) {
+            throw new InvalidSeriesIndexException(this.getClass(), n);
+        }
         if(n >= results.length) {
             populate(n);
         }
-        return results[n];
+        return results[n - 1];
     }
 }

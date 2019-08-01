@@ -1,6 +1,5 @@
 package io.github.jamers.euler.problem;
 
-import io.github.jamers.math.FibonnacciSeries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

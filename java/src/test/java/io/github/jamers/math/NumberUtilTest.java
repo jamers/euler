@@ -6,10 +6,6 @@ import java.math.BigInteger;
 
 import static junit.framework.Assert.*;
 
-/**
- * Created by jamers on 06/02/2016.
- */
-
 public class NumberUtilTest {
     @Test
     public void testIsEven() {
