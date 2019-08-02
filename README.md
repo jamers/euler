@@ -14,13 +14,13 @@ Project Euler solutions
 | 05 | [Smallest multiple](https://projecteuler.net/problem=5) | :white_check_mark: | :white_check_mark: |
 | 06 | [Sum square difference](https://projecteuler.net/problem=6) | :white_check_mark: | :white_check_mark: |
 | 07 | [10,001st Prime](https://projecteuler.net/problem=7) | :white_check_mark: | :white_check_mark: |
-| 08 |  | :white_check_mark: |  |
+| 08 | [Largest product in a series](https://projecteuler.net/problem=8) | :white_check_mark: |  |
 | 09 | [Special Pythagorean Triplet](https://projecteuler.net/problem=9) | :white_check_mark: | :white_check_mark: |
 | 10 | [Summation of primes](https://projecteuler.net/problem=10) | :white_check_mark: | :white_check_mark: |
-| 11 | [](https://projecteuler.net/problem=11) | :white_check_mark: |  |
-| 12 | [](https://projecteuler.net/problem=12) | :white_check_mark: |  |
-| 13 | [](https://projecteuler.net/problem=13) | :white_check_mark: |  |
-| 14 | [](https://projecteuler.net/problem=14) | :white_check_mark: |  |
+| 11 | [Largest product in a grid](https://projecteuler.net/problem=11) | :white_check_mark: |  |
+| 12 | [Highly divisible triangular number](https://projecteuler.net/problem=12) | :white_check_mark: | :white_check_mark: |
+| 13 | [Large sum](https://projecteuler.net/problem=13) | :white_check_mark: |  |
+| 14 | [Longest Collatz sequence](https://projecteuler.net/problem=14) | :white_check_mark: | :white_check_mark: |
 | 15 | [](https://projecteuler.net/problem=15) | :white_check_mark: |  |
 | 16 | [](https://projecteuler.net/problem=16) | :white_check_mark: |  |
 | 17 | [](https://projecteuler.net/problem=17) | :white_check_mark: |  |

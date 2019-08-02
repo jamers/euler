@@ -20,6 +20,11 @@ public class NumberUtil {
         return remainder == 0;
     }
 
+    public static boolean isEven(long i) {
+        long remainder = i % 2;
+        return remainder == 0;
+    }
+
     public static List<Character> toSortedDigitsList(BigInteger counter) {
         List<Character> x = new ArrayList<>();
         for(char c : String.valueOf(counter).toCharArray()) {
