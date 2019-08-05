@@ -1,7 +1,9 @@
 package io.github.jamers.euler.problem;
 
 import io.github.jamers.math.series.PrimeSeries;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,9 @@ import static org.junit.Assert.assertEquals;
 public class EulerTest
 {
     private static final Logger logger = LoggerFactory.getLogger(EulerTest.class);
+
+    @Rule
+    public Timeout globalTimeout = Timeout.seconds(10); // website suggests all tests should run in under one minute
 
     @Test
     public void test001() {
