@@ -21,8 +21,8 @@ Project Euler solutions
 | 12 | [Highly divisible triangular number](https://projecteuler.net/problem=12) | :white_check_mark: | :white_check_mark: |
 | 13 | [Large sum](https://projecteuler.net/problem=13) | :white_check_mark: |  |
 | 14 | [Longest Collatz sequence](https://projecteuler.net/problem=14) | :white_check_mark: | :white_check_mark: |
-| 15 | [](https://projecteuler.net/problem=15) | :white_check_mark: |  |
-| 16 | [](https://projecteuler.net/problem=16) | :white_check_mark: |  |
+| 15 | [Lattice paths](https://projecteuler.net/problem=15) | :white_check_mark: |  |
+| 16 | [Power digit sum](https://projecteuler.net/problem=16) | :white_check_mark: |  |
 | 17 | [](https://projecteuler.net/problem=17) | :white_check_mark: |  |
 | 18 | [](https://projecteuler.net/problem=18) | :white_check_mark: |  |
 | 19 | [](https://projecteuler.net/problem=19) | :white_check_mark: |  |

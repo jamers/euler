@@ -75,23 +75,28 @@ public class EulerTest
     public void test015() {
         assertEquals(2, new Euler015().countRoutesAcrossGridWithSize(1));
         assertEquals(6, new Euler015().countRoutesAcrossGridWithSize(2));
-        new Euler015().countRoutesAcrossGridWithSize(3);
-        new Euler015().countRoutesAcrossGridWithSize(4);
-        new Euler015().countRoutesAcrossGridWithSize(5);
-        new Euler015().countRoutesAcrossGridWithSize(6);
-        new Euler015().countRoutesAcrossGridWithSize(7);
-        new Euler015().countRoutesAcrossGridWithSize(8);
-        new Euler015().countRoutesAcrossGridWithSize(9);
-        new Euler015().countRoutesAcrossGridWithSize(10);
-        new Euler015().countRoutesAcrossGridWithSize(11);
-        new Euler015().countRoutesAcrossGridWithSize(12);
-        new Euler015().countRoutesAcrossGridWithSize(13);
-        new Euler015().countRoutesAcrossGridWithSize(14);
-        new Euler015().countRoutesAcrossGridWithSize(15);
-        new Euler015().countRoutesAcrossGridWithSize(16);
-        new Euler015().countRoutesAcrossGridWithSize(17);
-        new Euler015().countRoutesAcrossGridWithSize(18);
-        new Euler015().countRoutesAcrossGridWithSize(19);
+//        new Euler015().countRoutesAcrossGridWithSize(3);
+//        new Euler015().countRoutesAcrossGridWithSize(4);
+//        new Euler015().countRoutesAcrossGridWithSize(5);
+//        new Euler015().countRoutesAcrossGridWithSize(6);
+//        new Euler015().countRoutesAcrossGridWithSize(7);
+//        new Euler015().countRoutesAcrossGridWithSize(8);
+//        new Euler015().countRoutesAcrossGridWithSize(9);
+//        new Euler015().countRoutesAcrossGridWithSize(10);
+//        new Euler015().countRoutesAcrossGridWithSize(11);
+//        new Euler015().countRoutesAcrossGridWithSize(12);
+//        new Euler015().countRoutesAcrossGridWithSize(13);
+//        new Euler015().countRoutesAcrossGridWithSize(14);
+//        new Euler015().countRoutesAcrossGridWithSize(15);
+//        new Euler015().countRoutesAcrossGridWithSize(16);
+//        new Euler015().countRoutesAcrossGridWithSize(17);
+//        new Euler015().countRoutesAcrossGridWithSize(18);
+//        new Euler015().countRoutesAcrossGridWithSize(19);
         assertEquals(137846528820L, new Euler015().countRoutesAcrossGridWithSize(20));
+    }
+
+    @Test
+    public void test016() {
+        assertEquals(1366, new Euler016().solve());
     }
 }

@@ -1,7 +1,7 @@
 package io.github.jamers.euler.problem;
 
+import io.github.jamers.math.MathUtil;
 import io.github.jamers.math.series.iterator.FibonnacciSeriesIterator;
-import io.github.jamers.math.NumberUtil;
 
 import java.math.BigInteger;
 
@@ -16,7 +16,7 @@ public class Euler002 {
         for(BigInteger v : i) {
             if(v.intValue() > limit) {
                 break;
-            } else if(NumberUtil.isEven(v)) {
+            } else if(MathUtil.isEven(v)) {
                 result = result + v.intValue();
             }
         }

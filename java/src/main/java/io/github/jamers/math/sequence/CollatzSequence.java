@@ -1,7 +1,6 @@
 package io.github.jamers.math.sequence;
 
-import io.github.jamers.math.NumberUtil;
-import io.github.jamers.math.series.PrimeSeries;
+import io.github.jamers.math.MathUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,7 +36,7 @@ public class CollatzSequence
             if(pointer >= sequence.length) {
                 doubleSequence();
             }
-            if(NumberUtil.isEven(current)) {
+            if(MathUtil.isEven(current)) {
                 next = current / 2;
             } else {
                 next = (current * 3) + 1;
