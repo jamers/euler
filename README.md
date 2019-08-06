@@ -24,8 +24,8 @@ Project Euler solutions
 | 15 | [Lattice paths](https://projecteuler.net/problem=15) | :white_check_mark: |  |
 | 16 | [Power digit sum](https://projecteuler.net/problem=16) | :white_check_mark: | :white_check_mark: |
 | 17 | [Number letter counts](https://projecteuler.net/problem=17) | :white_check_mark: | :white_check_mark: |
-| 18 | [](https://projecteuler.net/problem=18) | :white_check_mark: |  |
-| 19 | [](https://projecteuler.net/problem=19) | :white_check_mark: |  |
+| 18 | [Maximum path sum 1](https://projecteuler.net/problem=18) | :white_check_mark: |  |
+| 19 | [Counting Sundays](https://projecteuler.net/problem=19) | :white_check_mark: | :white_check_mark: |
 | 20 |  | :white_check_mark: |  |
 | 31 |  | :white_check_mark: |  |
 | 32 |  | :white_check_mark: |  |
