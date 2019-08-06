@@ -1,9 +1,15 @@
 package io.github.jamers.math;
 
+import io.github.jamers.euler.problem.Euler014;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.math.BigInteger;
 import java.util.*;
 
 public class MathUtil {
+    private static final Logger logger = LoggerFactory.getLogger(MathUtil.class);
+
     public static int calculateSumOfMultiples(int limit, int... multiples) {
         int sum = 0;
         for(int i = 1; i < limit; i++) {
@@ -64,5 +70,28 @@ public class MathUtil {
         }
         //        logger.info("Divisors of {}: {}", x, divisors);
         return divisors;
+    }
+
+    public static BigInteger factorial(BigInteger n) {
+        if(n.compareTo(BigInteger.valueOf(2)) < 0) {
+            return n;
+        }
+        BigInteger factorial = factorial(n.subtract(BigInteger.ONE));
+
+        return n.multiply(factorial);
+    }
+
+    public static List<Character> toDigitsList(long num)
+    {
+        return toDigitsList(BigInteger.valueOf(num));
+    }
+
+    public static int sumDigits(List<Character> characters)
+    {
+        int sum = 0;
+        for(Character c : characters) {
+            sum += Character.getNumericValue(c);
+        }
+        return sum;
     }
 }

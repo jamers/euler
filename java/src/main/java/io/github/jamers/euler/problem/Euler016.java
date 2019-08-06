@@ -11,10 +11,6 @@ public class Euler016
         BigInteger two = BigInteger.valueOf(2);
         BigInteger twoToPowerOfOneHundred = two.pow(1000);
         List<Character> characters = MathUtil.toDigitsList(twoToPowerOfOneHundred);
-        int sum = 0;
-        for(char c : characters) {
-            sum += Character.getNumericValue(c);
-        }
-        return sum;
+        return MathUtil.sumDigits(characters);
     }
 }
