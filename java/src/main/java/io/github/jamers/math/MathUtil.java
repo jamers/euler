@@ -57,7 +57,7 @@ public class MathUtil {
         return x;
     }
 
-    public static Set<Integer> listDivisors(int x) {
+    public static Set<Integer> calculateDivisors(int x) {
         Set<Integer> divisors = new HashSet<>();
         double limit = Math.sqrt(x);
         for(int i = 1; i <= limit; i++) {
@@ -69,6 +69,12 @@ public class MathUtil {
             }
         }
         //        logger.info("Divisors of {}: {}", x, divisors);
+        return divisors;
+    }
+
+    public static Set<Integer> calculateProperDivisors(int x) {
+        Set<Integer> divisors = calculateDivisors(x);
+        divisors.remove(x);
         return divisors;
     }
 

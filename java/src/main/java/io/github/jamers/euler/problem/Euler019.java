@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
  */
 public class Euler019
 {
-    private static final Logger logger = LoggerFactory.getLogger(Euler015.class);
+    private static final Logger logger = LoggerFactory.getLogger(Euler019.class);
 
     public int solve() {
         int sundaysOnFirstOfMonth = 0;

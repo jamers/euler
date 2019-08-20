@@ -27,7 +27,7 @@ Project Euler solutions
 | 18 | [Maximum path sum 1](https://projecteuler.net/problem=18) | :white_check_mark: |  |
 | 19 | [Counting Sundays](https://projecteuler.net/problem=19) | :white_check_mark: | :white_check_mark: |
 | 20 | [Factorial digit sum](https://projecteuler.net/problem=20) | :white_check_mark: | :white_check_mark: |
-| 21 | [](https://projecteuler.net/problem=21) | :white_check_mark: |  |
+| 21 | [Amicable numbers](https://projecteuler.net/problem=21) | :white_check_mark: |  |
 | 22 | [](https://projecteuler.net/problem=22) | :white_check_mark: |  |
 | 23 | [](https://projecteuler.net/problem=23) | :white_check_mark: |  |
 | 24 | [](https://projecteuler.net/problem=24) | :white_check_mark: |  |

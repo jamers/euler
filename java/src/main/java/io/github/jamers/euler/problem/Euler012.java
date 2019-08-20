@@ -23,7 +23,7 @@ public class Euler012
         TriangleSeriesIterator triangles = new TriangleSeriesIterator();
 
         for(int triangle : triangles) {
-            if(MathUtil.listDivisors(triangle).size() >= 500) {
+            if(MathUtil.calculateDivisors(triangle).size() >= 500) {
                 return triangle;
             }
         }
