@@ -76,3 +76,17 @@ Project Euler solutions
 | 68 |  |  |  |
 | 69 |  |  |  |
 | 70 |  |  |  |
+
+Proposed languages
+* Scala
+* Clojure
+* Haskell
+* Io
+* Prolog
+* Erlang
+* Ruby
+* Bash
+* Pascal
+* VB
+* C Sharp
+* Drools?
