@@ -89,4 +89,6 @@ Proposed languages
 * Pascal
 * VB
 * C Sharp
+* Python
+* Perl
 * Drools?
