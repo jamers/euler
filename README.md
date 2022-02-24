@@ -92,3 +92,7 @@ Proposed languages
 * Python
 * Perl
 * Drools?
+* Groovy
+* Kotlin
+* Node.js
+* Go
